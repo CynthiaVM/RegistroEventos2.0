@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Registro de Eventos</title>
+  </head>
+
+  <body>
+    <form id="formulario">
+      <h1>Registro de Personas</h1>
+      <div>
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div>
+        <br></br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+      </div>
+      <div>
+        <br></br>
+        <label for="pais">País:</label>
+        <select id="pais" required>
+          <option value="">Selecciona un país</option>
+          <option value="arg">Argentina</option>
+          <option value="chi">Chile</option>
+          <option value="uru">Uruguay</option>
+        </select>
+        <br></br>
+      </div>
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+        <button id="borrar">Borrar toda la base</button>
+      </div>
+    </form>
+    <script src="./src/main.ts"></script>
+  </body>
+</html>
