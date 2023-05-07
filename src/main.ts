@@ -81,5 +81,5 @@ formulario.addEventListener('submit', (event) => {
 	formulario.reset();
 	
   alert('¡Registro exitoso!');
-   
+  
 });
